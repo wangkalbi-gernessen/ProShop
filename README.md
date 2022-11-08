@@ -61,7 +61,8 @@ Through this web app .
 
 
 # Technologies Used
-- TypeScript(language)
+- JavaScript(language)
+- Eslint(Automatic Formatter)
 - MongoDB.js(No SQL Database)
 - Express.js()
 - React.js(JavaScript library)
