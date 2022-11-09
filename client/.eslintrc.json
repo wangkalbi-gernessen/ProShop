@@ -13,15 +13,25 @@
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
-    // "ecmaFeatures": {
-    //   "jsx": true
-    // },
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "sourceType": "module"
   },
   "plugins": ["react"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "import/extensions": "off",
-    "react/jsx-filename-extension": [0]
+    "react/jsx-filename-extension": [0],
+    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-no-useless-fragment": [2, { "allowExpressions": true }],
+    "react/self-closing-comp": "off"
   }
 }
